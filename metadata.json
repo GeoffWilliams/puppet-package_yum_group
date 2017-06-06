@@ -1,12 +1,12 @@
 {
-  "name": "geoffwilliams-package_yum_groupinstall",
+  "name": "geoffwilliams-package_yum_group",
   "version": "0.1.0",
   "author": "geoffwilliams",
-  "summary": "Add a package provider yum_groupinstall to provide access to `yum groupinstall` via puppet",
+  "summary": "Add a package provider yum_group to provide access to `yum group` via puppet",
   "license": "Apache-2.0",
-  "source": "https://github.com/GeoffWilliams/puppet-package_yum_groupinstall.git",
+  "source": "https://github.com/GeoffWilliams/puppet-package_yum_group.git",
   "project_page": null,
-  "issues_url": "https://api.github.com/repos/GeoffWilliams/puppet-package_yum_groupinstall/issues{/number}",
+  "issues_url": "https://api.github.com/repos/GeoffWilliams/puppet-package_yum_group/issues{/number}",
   "dependencies": [
     {
       "name": "puppetlabs-stdlib",
@@ -14,5 +14,5 @@
     }
   ],
   "data_provider": null,
-  "project_url": "https://github.com/GeoffWilliams/puppet-package_yum_groupinstall.git"
+  "project_url": "https://github.com/GeoffWilliams/puppet-package_yum_group.git"
 }

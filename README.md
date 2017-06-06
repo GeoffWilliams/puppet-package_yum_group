@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/GeoffWilliams/puppet-package_yum_groupinstall.svg?branch=master)](https://travis-ci.org/GeoffWilliams/puppet-package_yum_groupinstall)
-# package_yum_groupinstall
+[![Build Status](https://travis-ci.org/GeoffWilliams/puppet-package_yum_group.svg?branch=master)](https://travis-ci.org/GeoffWilliams/puppet-package_yum_group)
+# package_yum_group
 
 #### Table of Contents
 
@@ -11,13 +11,21 @@
 
 ## Description
 
-Add a package provider yum_groupinstall to provide access to `yum groupinstall` via puppet
+Add a package provider yum_group to provide access to `yum groupinstall` via puppet
 
 ## Usage
-See reference and examples
+
+```puppet
+package { "Development Tools":
+  ensure   => present,
+  provider => yum_group,
+}
+```
+
+Is probably why your here ;-) - see also reference and examples
 
 ## Reference
-[generated documentation](https://rawgit.com/GeoffWilliams/puppet-package_yum_groupinstall/master/doc/index.html).
+[generated documentation](https://rawgit.com/GeoffWilliams/puppet-package_yum_group/master/doc/index.html).
 
 Reference documentation is generated directly from source code using [puppet-strings](https://github.com/puppetlabs/puppet-strings).  You may regenerate the documentation by running:
 
