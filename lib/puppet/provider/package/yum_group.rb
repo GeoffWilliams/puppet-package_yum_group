@@ -17,17 +17,17 @@ Puppet::Type.type(:package).provide :yum_group, :parent => :rpm, :source => :rpm
 
 
   def install
-    execute([command(:cmd), "-y", "group", "install", @resource[:name]])
+    execute([command(:cmd), "-y", "groupinstall", @resource[:name]])
   end
 
 
   def uninstall
-    execute([command(:cmd), "-y", "group", "remove", @resource[:name]])
+    execute([command(:cmd), "-y", "groupremove", @resource[:name]])
   end
 
 
   def self.instances
-    yum_groups = execute([command(:cmd), "group", "list", "installed", "-q"])
+    yum_groups = execute([command(:cmd), "grouplist", "installed", "-q"])
 
     # returns a Puppet::Util::Execution::ProcessOutput which is a kinda magic
     # string-like thing thats not really a string and is also a private API. for
