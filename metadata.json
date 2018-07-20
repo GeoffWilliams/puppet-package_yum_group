@@ -1,6 +1,6 @@
 {
   "name": "geoffwilliams-package_yum_group",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "geoffwilliams",
   "summary": "Add a package provider yum_group to provide access to `yum group` via puppet",
   "license": "Apache-2.0",
